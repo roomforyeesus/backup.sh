@@ -42,24 +42,12 @@ echo "$origAbsPath"
 
 # [TASK 6]
 cd $destinationDirectory || exit # <-
-#alias varlog='cd $destDirAbsPath'
-# shellcheck source=varlog
-#source backup.sh
-#unalias varlog 
 destDirAbsPath=$(pwd)
 echo "$destDirAbsPath"
 
 # [TASK 7]
 cd $origAbsPath
 cd $targetDirectory
-#alias tmp='cd $origAbsPath'
-# shellcheck source=tmp
-#source backup.sh
-#unalias tmp
-#alias abc='cd $targetDirectory'
-# shellcheck source=abc
-#source backup.sh
-#unalias abc 
 
 # [TASK 8]
 #dt=$(date --date=yesterday +"%F-%H-%M-%S")
